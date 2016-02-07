@@ -27,24 +27,28 @@ block content
 
     hr
     h2.center R.S.V.P
-    form.center(action="submit" method="post")
-      label.block.cursive Email
-      input.field(placeholder="ForeverAnEnglish@example.com")
-      <br>
-      <br>
-      label.block.cursive Phone
-      input.field(placeholder="1(800)-222-3333")
-      <br>
-      <br>
-      label.block.cursive Attending
-      input.field(placeholder="Yes, Heck yes, or Can't Make it?")
-      <br>
-      <br>
-      label.block.cursive Party Size
-      input.field(placeholder="How many folks are you bringing?")
+    if responded
+      h1.cursive.center Thanks!
+      p.center We'll see ya there!
+    else
+      form.center(action="submit" method="post")
+        label.block.cursive Email
+        input.field(required name="emal" placeholder="ForeverAnEnglish@example.com")
+        <br>
+        <br>
+        label.block.cursive Phone
+        input.field(required name="phone" placeholder="1(800)-222-3333")
+        <br>
+        <br>
+        label.block.cursive Attending
+        input.field(required name="attending" placeholder="Yes, Heck yes, or Can't Make it?")
+        <br>
+        <br>
+        label.block.cursive Party Size
+        input.field(required name="partySize" placeholder="How many folks are you bringing?")
 
-      <br>
-      <br>
-      <br>
-      input.btn.btn-primary.center(type=submit value="Party Time!")
-    .cursive.center.p4 #ForeverAnEnglish
+        <br>
+        <br>
+        <br>
+        input.btn.btn-primary.center(type="submit" value="Party Time!")
+      .cursive.center.p4 #ForeverAnEnglish
