@@ -1,8 +1,27 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+.background-dark {
+  background: #6D5A57;
 }
 
-a {
-  color: #00B7FF;
+.background-light {
+  background: #FEF5EE;
+}
+
+html body {
+  font-family: 'Merriweather', serif;
+  color: #2D2524;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', serif;
+}
+
+.cursive {
+  font-family: 'Parisienne', sans-serif;
+}
+
+.container {
+  max-width: 32em;
+}
+
+input {
+  padding: 0.5rem 1rem;
 }

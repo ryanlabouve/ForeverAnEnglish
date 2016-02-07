@@ -1,17 +1,40 @@
 extends layout
 
 block content
-  p You are cordially invited to attend the marriage of
-  h2 Sarah Elizabeth Duty
-  p &
-  h2 Aaron Howard English
+  .container.background-light.p3
+    p.mt4.center.cursive You are cordially invited to attend the marriage of
+    h1.center.mb0 Sarah
+    h6.center.mt0 Elizabeth Duty
+    p.center.mt2.mb2 —&—
+    h1.center.mt0.mb0 Aaron
+    h6.center.mt0.mb4 Howard English
 
-  hr
+    hr
 
-  p Sunday February 28, 2016
-  p 4:00pm
+    .row.clearfix.py2.center
+      .col.col-6.border-right
+        p Sunday February 28, 2016
+        p 4:00pm
 
-  hr
-  p Bridle Creek Ranch
-  p 5811 roper rd., Sperry Oklahoma
-  hr
+      .col.col-6
+        p Bridle Creek Ranch
+        p 5811 Roper Rd., Sperry Oklahoma
+
+    hr
+    h2.center R.S.V.P
+    form.center
+      label.block.cursive Email
+      input.field(placeholder="ForeverAnEnglish@example.com")
+      <br>
+      <br>
+      label.block Phone
+      input.field(placeholder="1(800)-222-3333")
+      <br>
+      <br>
+      label.block Attending
+      input.field(placeholder="Yes, Heck yes, or Can't Make it?")
+      <br>
+      <br>
+      label.block Party Size
+      input.field(placeholder="How many folks are you bringing?")
+    .cursive.center.p4 #ForeverAnEnglish
